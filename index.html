@@ -130,7 +130,15 @@ header.scrolled {
   margin-bottom:10px;
 }
 .sec-title em { font-style:normal; color:var(--primary); }
-.section-title { text-align:center; }
+.section-title {
+  text-align:center;
+  font-family:'Shippori Mincho', serif;
+  font-weight:800;
+  font-size:clamp(1.28rem, 6vw, 1.6rem);
+  line-height:1.5;
+  color:var(--text-dark);
+}
+.section-title em { font-style:normal; color:var(--primary); }
 .divider {
   width:36px; height:2px;
   background:linear-gradient(90deg, var(--primary-light), var(--primary));
@@ -556,8 +564,8 @@ header.scrolled {
 /* ━━━━━━━━━━━━━━━━━━ STORY ━━━━━━━━━━━━━━━━━━ */
 .story { background:var(--primary-pale); padding:0 24px 80px; }
 .story-headline-frame {
-  margin:40px 0 0;
-  padding:28px 24px;
+  margin:32px 0 0;
+  padding:24px 18px;
   border:1.5px solid var(--primary-light);
   border-radius:var(--radius);
   background:white;
@@ -566,9 +574,10 @@ header.scrolled {
 }
 .story-headline-frame h2 {
   font-family:'Shippori Mincho', serif;
-  font-size:clamp(1.3rem, 5.5vw, 1.7rem);
+  font-size:clamp(0.92rem, 4.4vw, 1.5rem);
   font-weight:700; line-height:1.5;
   color:var(--text-dark);
+  white-space:nowrap;
 }
 .story-headline-frame h2 em {
   font-style:normal; color:var(--primary);
@@ -671,15 +680,16 @@ header.scrolled {
 .story-body em { font-style:normal; color:var(--primary); font-weight:700; }
 .story-quote {
   background:white; border-radius:var(--radius);
-  padding:30px 24px 26px; margin:24px 0;
+  padding:30px 20px 26px; margin:24px 0;
   box-shadow:var(--shadow); position:relative;
   font-family:'Shippori Mincho', serif;
-  font-size:1.18rem;
-  line-height:1.9;
+  font-size:clamp(0.92rem, 4.3vw, 1.18rem);
+  line-height:1.7;
   color:var(--text-dark);
   font-weight:700;
-  letter-spacing:0.02em;
+  letter-spacing:0.01em;
   text-align:center;
+  white-space:nowrap;
 }
 .story-quote::before {
   content:'"';
@@ -1792,7 +1802,7 @@ footer {
       <div class="hero-stat-label">エステ歴</div>
     </div>
     <div class="hero-stat">
-      <div class="hero-stat-num">3<sup>〜5</sup></div>
+      <div class="hero-stat-num">3〜5</div>
       <div class="hero-stat-label">平均カップUP</div>
     </div>
     <div class="hero-stat">
@@ -2082,14 +2092,14 @@ footer {
 
 <!-- ━━━━━━━━━━━━━━━━━━ STRENGTHS ━━━━━━━━━━━━━━━━━━ -->
 <section class="strengths reveal">
-  <h2 class="section-title">3つの強みで、<em>サロンに革新を</em></h2>
+  <h2 class="section-title">3つの強みで、<br><em>サロンに革新を</em></h2>
   <div class="section-divider"></div>
   <p class="strength-lead">事業再現性を高める<br>マザーシップの3つの柱</p>
   <div class="strength-block reveal d1">
     <span class="strength-ribbon">未経験からプロへ</span>
     <h3 class="strength-block-title">
       <svg class="strength-leaf" viewBox="0 0 30 60" xmlns="http://www.w3.org/2000/svg" style="color:var(--primary-light)" fill="currentColor"><ellipse cx="15" cy="6" rx="7" ry="4" transform="rotate(35 15 6)"/><ellipse cx="12" cy="16" rx="7" ry="4" transform="rotate(30 12 16)"/><ellipse cx="14" cy="26" rx="7" ry="4" transform="rotate(25 14 26)"/><ellipse cx="11" cy="36" rx="7" ry="4" transform="rotate(20 11 36)"/><ellipse cx="13" cy="46" rx="7" ry="4" transform="rotate(15 13 46)"/></svg>
-      再現性の高い<br><em>ノウハウ</em>
+      <span>再現性の高い<br><em>ノウハウ</em></span>
       <svg class="strength-leaf right" viewBox="0 0 30 60" xmlns="http://www.w3.org/2000/svg" style="color:var(--primary-light)" fill="currentColor"><ellipse cx="15" cy="6" rx="7" ry="4" transform="rotate(35 15 6)"/><ellipse cx="12" cy="16" rx="7" ry="4" transform="rotate(30 12 16)"/><ellipse cx="14" cy="26" rx="7" ry="4" transform="rotate(25 14 26)"/><ellipse cx="11" cy="36" rx="7" ry="4" transform="rotate(20 11 36)"/><ellipse cx="13" cy="46" rx="7" ry="4" transform="rotate(15 13 46)"/></svg>
     </h3>
     <svg class="strength-underline" viewBox="0 0 130 14" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 Q65 14 128 2" stroke="var(--gold)" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
@@ -2103,7 +2113,7 @@ footer {
     <span class="strength-ribbon">サロンの未来を支える</span>
     <h3 class="strength-block-title">
       <svg class="strength-leaf" viewBox="0 0 30 60" xmlns="http://www.w3.org/2000/svg" style="color:var(--primary-light)" fill="currentColor"><ellipse cx="15" cy="6" rx="7" ry="4" transform="rotate(35 15 6)"/><ellipse cx="12" cy="16" rx="7" ry="4" transform="rotate(30 12 16)"/><ellipse cx="14" cy="26" rx="7" ry="4" transform="rotate(25 14 26)"/><ellipse cx="11" cy="36" rx="7" ry="4" transform="rotate(20 11 36)"/><ellipse cx="13" cy="46" rx="7" ry="4" transform="rotate(15 13 46)"/></svg>
-      徹底した<br><em>研修・サポート</em>
+      <span>徹底した<br><em>研修・サポート</em></span>
       <svg class="strength-leaf right" viewBox="0 0 30 60" xmlns="http://www.w3.org/2000/svg" style="color:var(--primary-light)" fill="currentColor"><ellipse cx="15" cy="6" rx="7" ry="4" transform="rotate(35 15 6)"/><ellipse cx="12" cy="16" rx="7" ry="4" transform="rotate(30 12 16)"/><ellipse cx="14" cy="26" rx="7" ry="4" transform="rotate(25 14 26)"/><ellipse cx="11" cy="36" rx="7" ry="4" transform="rotate(20 11 36)"/><ellipse cx="13" cy="46" rx="7" ry="4" transform="rotate(15 13 46)"/></svg>
     </h3>
     <svg class="strength-underline" viewBox="0 0 130 14" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 Q65 14 128 2" stroke="var(--gold)" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
@@ -2117,7 +2127,7 @@ footer {
     <span class="strength-ribbon">選ばれるサロンになるために</span>
     <h3 class="strength-block-title">
       <svg class="strength-leaf" viewBox="0 0 30 60" xmlns="http://www.w3.org/2000/svg" style="color:var(--primary-light)" fill="currentColor"><ellipse cx="15" cy="6" rx="7" ry="4" transform="rotate(35 15 6)"/><ellipse cx="12" cy="16" rx="7" ry="4" transform="rotate(30 12 16)"/><ellipse cx="14" cy="26" rx="7" ry="4" transform="rotate(25 14 26)"/><ellipse cx="11" cy="36" rx="7" ry="4" transform="rotate(20 11 36)"/><ellipse cx="13" cy="46" rx="7" ry="4" transform="rotate(15 13 46)"/></svg>
-      強力な<em>集客</em>
+      <span>強力な<em>集客</em></span>
       <svg class="strength-leaf right" viewBox="0 0 30 60" xmlns="http://www.w3.org/2000/svg" style="color:var(--primary-light)" fill="currentColor"><ellipse cx="15" cy="6" rx="7" ry="4" transform="rotate(35 15 6)"/><ellipse cx="12" cy="16" rx="7" ry="4" transform="rotate(30 12 16)"/><ellipse cx="14" cy="26" rx="7" ry="4" transform="rotate(25 14 26)"/><ellipse cx="11" cy="36" rx="7" ry="4" transform="rotate(20 11 36)"/><ellipse cx="13" cy="46" rx="7" ry="4" transform="rotate(15 13 46)"/></svg>
     </h3>
     <svg class="strength-underline" viewBox="0 0 130 14" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 Q65 14 128 2" stroke="var(--gold)" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
