@@ -582,6 +582,35 @@ header.scrolled {
 .story-headline-frame h2 em {
   font-style:normal; color:var(--primary);
 }
+/* ━━━━━━━━━━━━━━━━━━ HISTORY ━━━━━━━━━━━━━━━━━━ */
+.history { background:var(--bg-beige); padding:64px 24px 70px; }
+.history-cols { display:grid; gap:28px; margin-top:32px; }
+.history-col-ttl {
+  font-family:'Shippori Mincho', serif;
+  font-size:0.95rem; font-weight:700;
+  color:var(--primary-dark);
+  margin-bottom:14px;
+  padding-bottom:8px;
+  border-bottom:2px solid var(--gold-light);
+}
+.history-list { display:flex; flex-direction:column; gap:0; }
+.history-row {
+  display:flex; gap:14px; align-items:flex-start;
+  padding:14px 0;
+  border-bottom:1px dashed var(--primary-light);
+}
+.history-row:last-child { border-bottom:none; }
+.history-dot {
+  flex-shrink:0; width:8px; height:8px; border-radius:50%;
+  background:var(--primary); margin-top:8px;
+}
+.history-row-label {
+  flex-shrink:0; width:108px;
+  font-size:0.78rem; font-weight:700; color:var(--text-mid);
+  line-height:1.5;
+}
+.history-row-detail { font-size:0.85rem; color:var(--text-dark); line-height:1.7; }
+.history-row-detail strong { color:var(--primary-dark); font-weight:700; }
 .story-photo {
   position:relative;
   overflow:hidden;
@@ -727,11 +756,12 @@ header.scrolled {
   display:block;
   margin-top:14px;
   font-family:'Shippori Mincho', serif;
-  font-size:1rem;
+  font-size:clamp(0.74rem, 3.4vw, 1rem);
   line-height:1.6;
   font-weight:800;
   color:var(--primary-dark);
   letter-spacing:0.02em;
+  white-space:nowrap;
 }
 
 /* ━━━━━━━━━━━━━━━━━━ TECHNOLOGY ━━━━━━━━━━━━━━━━━━ */
@@ -1812,7 +1842,7 @@ footer {
   </div>
   <div class="hero-cta">
     <a href="https://lin.ee/zU5XGeM" target="_blank" rel="noopener" class="btn-primary btn-pulse">
-      無料説明会に申し込む
+      無料相談に申し込む
       <small>まずはLINEでお気軽にどうぞ</small>
     </a>
   </div>
@@ -1881,7 +1911,7 @@ footer {
     <li class="pain-item reveal d1"><span class="pain-x">✓</span>売上が月によって波があり、先が読めない</li>
   </ul>
   <div class="pain-resolve reveal">
-    <p class="pain-resolve-big">それは「<span class="pain-resolve-key">技術</span>」ではなく<br>「<span class="pain-resolve-key">仕組み</span>」の問題です。</p>
+    <p class="pain-resolve-big">圧倒的な「<span class="pain-resolve-key">技術</span>」と<br>結果を出す「<span class="pain-resolve-key">ノウハウ</span>」で<br>解決できます。</p>
     <p class="pain-resolve-main">B.villea マザーシッププログラムは<br>1回で圧倒的な結果を出せる技術と<br>再現性の高いビジネスモデルを<br>あなたに丸ごと届けます。</p>
   </div>
   <div style="margin-top:40px; text-align:center;">
@@ -1953,6 +1983,38 @@ footer {
   </div>
   <div class="story-headline-frame reveal">
     <h2>女性が胸を張って<em>生きれるように</em></h2>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━━━━━━ HISTORY ━━━━━━━━━━━━━━━━━━ -->
+<section class="history reveal">
+  <p class="section-en">History</p>
+  <h2 class="section-title">代表蒲池の<em>歴史</em></h2>
+  <div class="section-divider"></div>
+  <div class="history-cols">
+    <div>
+      <p class="history-col-ttl">キャリア</p>
+      <div class="history-list">
+        <div class="history-row reveal"><span class="history-dot"></span><span class="history-row-label">美容専門学校卒業後</span><span class="history-row-detail">訪問販売化粧品会社 エステ部門へ所属</span></div>
+        <div class="history-row reveal d1"><span class="history-dot"></span><span class="history-row-label">入社初年度</span><span class="history-row-detail">筑後地区 物販売上<strong>1位</strong>を獲得</span></div>
+        <div class="history-row reveal d1"><span class="history-dot"></span><span class="history-row-label">その後</span><span class="history-row-detail">フェイシャル・バスト・脱毛サロンへ入社</span></div>
+        <div class="history-row reveal d2"><span class="history-dot"></span><span class="history-row-label">店長時代</span><span class="history-row-detail">店長を<strong>5年間</strong>務め、カウンセリング・施術・育成を担当</span></div>
+        <div class="history-row reveal d2"><span class="history-dot"></span><span class="history-row-label">実績</span><span class="history-row-detail">個人月間売上<strong>1,200万円</strong>を達成</span></div>
+        <div class="history-row reveal d3"><span class="history-dot"></span><span class="history-row-label">結婚・出産後</span><span class="history-row-detail">エステ業界へ復帰</span></div>
+        <div class="history-row reveal d3"><span class="history-dot"></span><span class="history-row-label">現在まで12年間</span><span class="history-row-detail">大分・福岡の<strong>2店舗</strong>を運営</span></div>
+      </div>
+    </div>
+    <div>
+      <p class="history-col-ttl">技術・実績</p>
+      <div class="history-list">
+        <div class="history-row reveal"><span class="history-dot"></span><span class="history-row-label">技術習得</span><span class="history-row-detail">アーユルヴェーダを学び、フェイシャル・ヘッド・バストなど多数の資格を取得</span></div>
+        <div class="history-row reveal d1"><span class="history-dot"></span><span class="history-row-label">バスト専門サロン B.villea設立</span><span class="history-row-detail">サイズアップ特化サロンとして運営開始</span></div>
+        <div class="history-row reveal d1"><span class="history-dot"></span><span class="history-row-label">施術実績</span><span class="history-row-detail">1回で<strong>2〜4カップアップ</strong>、Aカップ→Gカップの実績あり</span></div>
+        <div class="history-row reveal d2"><span class="history-dot"></span><span class="history-row-label">口コミ評価</span><span class="history-row-detail">ホットペッパー口コミ評価<strong>★5.0</strong></span></div>
+        <div class="history-row reveal d2"><span class="history-dot"></span><span class="history-row-label">2024,2025年</span><span class="history-row-detail">NINEセレクション 全国<strong>400サロン</strong>の中から<strong>連続グランプリ受賞</strong></span></div>
+        <div class="history-row reveal d3"><span class="history-dot"></span><span class="history-row-label">現在</span><span class="history-row-detail">エステ歴<strong>23年</strong>・予約が絶えない人気バストアップサロンを運営</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -2141,20 +2203,12 @@ footer {
       </div>
       <div class="strength-service">
         <div class="strength-service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg"><path d="M3 5h12v8H9l-3 3v-3H3z"/><path d="M21 11h-3v7l-3-3h-3" /></svg>
-        </div>
-        <span class="strength-service-label">SNS集客を本部が支援</span>
-        <p class="strength-service-desc">投稿設計・運用サポートで<br>ファンを育てる</p>
-      </div>
-      <div class="strength-service">
-        <div class="strength-service-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg"><path d="M3 20h18"/><rect x="5" y="12" width="3" height="6"/><rect x="10.5" y="9" width="3" height="9"/><rect x="16" y="5" width="3" height="13"/><path d="M5 9l4-4 4 3 6-6"/></svg>
         </div>
         <span class="strength-service-label">SNS運用コンサル</span>
         <p class="strength-service-desc">分析・改善・戦略設計で<br>成果を最大化</p>
       </div>
     </div>
-    <p class="strength-note">※03に関しては別途費用</p>
   </div>
 </section>
 
@@ -2208,36 +2262,15 @@ footer {
   </div>
 </section>
 
-<!-- ━━━━━━━━━━━━━━━━━━ VOICE ━━━━━━━━━━━━━━━━━━ -->
-<section class="voice reveal">
-  <p class="section-en">Voice</p>
-  <h2 class="section-title">受講生の<em>声</em></h2>
-  <div class="section-divider"></div>
-  <div class="voice-cards">
-    <div class="voice-card reveal d1">
-      <p class="voice-text">「オープンから3ヶ月で全席埋まりました。技術はもちろん、集客の仕組みまで教えてもらえたのが本当に助かりました。」</p>
-      <p class="voice-attr">—— 30代・福岡 ／ 専業主婦から開業</p>
-    </div>
-    <div class="voice-card reveal d2">
-      <p class="voice-text">「エステ歴2年でしたが、研修後すぐにお客様から『全然違う！』と言っていただけました。自信が持てました。」</p>
-      <p class="voice-attr">—— 20代・東京 ／ サロン勤務からフリーへ</p>
-    </div>
-    <div class="voice-card reveal d3">
-      <p class="voice-text">「単価を5倍にしても予約が埋まるようになりました。指名サロンになれるとは思っていなかったです。」</p>
-      <p class="voice-attr">—— 40代・大阪 ／ 副業から専業へ</p>
-    </div>
-  </div>
-</section>
-
 <!-- ━━━━━━━━━━━━━━━━━━ FLOW ━━━━━━━━━━━━━━━━━━ -->
 <section class="flow reveal">
   <p class="section-en">Flow</p>
-  <h2 class="section-title">申し込みから<em>開業まで</em></h2>
+  <h2 class="section-title">申し込みから<em>導入・開業まで</em></h2>
   <div class="section-divider"></div>
   <ol class="flow-steps">
     <li class="flow-step reveal d1">
       <div class="flow-num">01</div>
-      <div class="flow-body"><h3>お電話・サロン見学</h3><p>概要説明・個別相談（対面またはビデオ）。福岡市内の店舗見学も相談可。</p></div>
+      <div class="flow-body"><h3>個別相談</h3><p>概要説明・個別相談（対面またはビデオ）。福岡市内の店舗見学も相談可。</p></div>
     </li>
     <li class="flow-step reveal d2">
       <div class="flow-num">02</div>
@@ -2253,85 +2286,9 @@ footer {
     </li>
     <li class="flow-step reveal d1">
       <div class="flow-num">05</div>
-      <div class="flow-body"><h3>サロン導入・開業</h3><p>開業後も毎月ミーティング・24時間LINEサポートで継続支援。</p></div>
+      <div class="flow-body"><h3>サロン導入・開業</h3><p>開業後も24時間LINEサポートで継続支援。</p></div>
     </li>
   </ol>
-</section>
-
-<!-- ━━━━━━━━━━━━━━━━━━ PRICING ━━━━━━━━━━━━━━━━━━ -->
-<section class="pricing reveal">
-  <p class="section-en">Pricing</p>
-  <h2 class="section-title">料金・<em>コース</em></h2>
-  <div class="section-divider"></div>
-  <!-- 初期費用テーブル -->
-  <div class="price-card reveal">
-    <div class="price-head">
-      <div class="price-head-ttl">初期費用（機械1台想定）</div>
-      <div class="price-head-sub">全て税抜表示</div>
-    </div>
-    <div class="price-body">
-      <div class="price-row">
-        <span class="price-lbl">スクール加盟金</span>
-        <span class="price-val">¥1,000,000</span>
-      </div>
-      <div class="price-row">
-        <span class="price-lbl">研修費（全て込み）</span>
-        <span class="price-val free">¥0</span>
-      </div>
-      <div class="price-row">
-        <span class="price-lbl">機械代（一括購入）</span>
-        <span class="price-val">¥2,500,000</span>
-      </div>
-    </div>
-    <div class="price-total">
-      <span class="price-total-l">合計</span>
-      <span class="price-total-v">¥3,500,000</span>
-    </div>
-  </div>
-  <p class="price-footnote reveal">
-    ※機械代をリースにした場合、<strong>初期費用は250万円に圧縮可能</strong>（リース月額¥100,000）<br>
-    ※全て税抜
-  </p>
-
-  <!-- マシンプラン -->
-  <div class="price-card reveal" style="margin-top:20px;">
-    <div class="price-head" style="background:linear-gradient(135deg,var(--gold),#A87C2A)">
-      <div class="price-head-ttl">マシン導入プラン</div>
-      <div class="price-head-sub">世界初のMFR搭載バストアップ専用マシン</div>
-    </div>
-    <div class="price-body">
-      <div class="price-row">
-        <span class="price-lbl">一括購入</span>
-        <span class="price-val">¥3,500,000</span>
-      </div>
-      <div class="price-row">
-        <span class="price-lbl">月額レンタル</span>
-        <span class="price-val">¥100,000 / 月</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- オプション -->
-  <div class="opt-card reveal" style="margin-top:20px;">
-    <div class="opt-head">オプションサービス</div>
-    <div class="opt-row">
-      <span>サロン名の使用【B.villea】</span>
-      <span class="opt-price">¥15,000 / 月</span>
-    </div>
-    <div class="opt-row">
-      <span>SNS運用アドバイス</span>
-      <span class="opt-price">¥15,000 / 月</span>
-    </div>
-    <div class="opt-row">
-      <span>SNS運用代行</span>
-      <span class="opt-price">別途相談</span>
-    </div>
-    <div class="opt-row">
-      <span>サロン立ち上げ・コンサル</span>
-      <span class="opt-price">¥300,000 / 月</span>
-    </div>
-  </div>
-  <p class="price-footnote reveal" style="margin-top:12px;">※サロン立ち上げコンサルは初月〜2ヶ月を想定。毎月のコンサルは別途ご相談ください。</p>
 </section>
 
 <!-- ━━━━━━━━━━━━━━━━━━ FAQ ━━━━━━━━━━━━━━━━━━ -->
@@ -2344,20 +2301,19 @@ footer {
     <div class="faq-item reveal d1"><button class="faq-q" onclick="toggleFaq(this)">どのくらいの期間で開業できますか？<span class="faq-arrow">▼</span></button><div class="faq-a"><p>研修は最短2日間〜。その後の準備期間を含め、早い方は1〜2ヶ月で開業されています。</p></div></div>
     <div class="faq-item reveal d2"><button class="faq-q" onclick="toggleFaq(this)">副業・自宅サロンでも可能ですか？<span class="faq-arrow">▼</span></button><div class="faq-a"><p>はい。自宅サロン・出張施術・レンタルスペース利用など、ご自身のスタイルに合わせた開業をサポートします。</p></div></div>
     <div class="faq-item reveal d3"><button class="faq-q" onclick="toggleFaq(this)">研修は対面ですか？オンラインですか？<span class="faq-arrow">▼</span></button><div class="faq-a"><p>座学はオンライン、技術研修は対面（福岡）で行います。遠方の方の交通費・宿泊はご自身のご負担となります。</p></div></div>
-    <div class="faq-item reveal d4"><button class="faq-q" onclick="toggleFaq(this)">開業後のサポートはありますか？<span class="faq-arrow">▼</span></button><div class="faq-a"><p>はい。開業後も定期ミーティング・LINEサポート・SNSアドバイスなど、継続的なサポートを行っています。</p></div></div>
+    <div class="faq-item reveal d4"><button class="faq-q" onclick="toggleFaq(this)">開業後のサポートはありますか？<span class="faq-arrow">▼</span></button><div class="faq-a"><p>はい。開業後も24時間LINEサポート・SNSアドバイスなど、継続的なサポートを行っています。</p></div></div>
   </div>
 </section>
 
 <!-- ━━━━━━━━━━━━━━━━━━ FINAL CTA ━━━━━━━━━━━━━━━━━━ -->
 <section class="final-cta" id="contact">
   <p class="section-en" style="color:rgba(255,255,255,0.6)">Contact</p>
-  <h2 class="final-cta-title">無料説明会に<br>申し込む</h2>
+  <h2 class="final-cta-title">無料相談に<br>申し込む</h2>
   <p class="final-cta-sub">LINEまたはお電話でどうぞ</p>
   <a href="https://lin.ee/zU5XGeM" target="_blank" rel="noopener" class="btn-line">
     <svg viewBox="0 0 24 24" width="22" height="22" fill="white"><path d="M19.365 9.89c.50 0 .866.37.866.87s-.365.87-.866.87h-2.17v1.3h2.17c.50 0 .866.37.866.87s-.365.87-.866.87H16.33c-.50 0-.866-.37-.866-.87V9.02c0-.50.365-.87.866-.87h3.035zm-6.95 4.78c0 .38-.22.72-.56.86a.87.87 0 01-.96-.19l-2.8-3.34v2.66c0 .50-.37.87-.87.87s-.87-.37-.87-.87V9.02c0-.38.22-.72.56-.86a.87.87 0 01.96.19l2.8 3.34V9.02c0-.50.37-.87.87-.87s.87.37.87.87v4.65zm-6.28.87c-.50 0-.87-.37-.87-.87V9.02c0-.50.37-.87.87-.87s.87.37.87.87v4.65c0 .50-.37.87-.87.87zm-2.6 0H1.5c-.50 0-.87-.37-.87-.87V9.02c0-.50.37-.87.87-.87s.87.37.87.87v3.78h1.17c.50 0 .87.37.87.87s-.37.87-.87.87z"/></svg>
     LINEで無料相談する
   </a>
-  <p class="final-cta-contact">お問い合わせ：info@bvillea.jp</p>
 </section>
 
 <!-- ━━━━━━━━━━━━━━━━━━ FOOTER ━━━━━━━━━━━━━━━━━━ -->
